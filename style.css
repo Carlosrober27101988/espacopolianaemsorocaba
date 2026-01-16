@@ -1,0 +1,283 @@
+/* ====== Configurações gerais ====== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* ====== Topo ====== */
+.topo {
+    background-color: #556B2F; /* Verde musgo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.topo ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.topo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topo a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Banner ====== */
+.banner {
+    background-image: url("../img/salao.jpg"); /* foto opcional */
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.banner h2 {
+    font-size: 36px;
+    color: #556B2F;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ====== Botão ====== */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #556B2F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #445724;
+}
+/* ====== Página História ====== */
+.historia-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-left: 5px solid #556B2F; /* verde musgo */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.historia-container h2 {
+    color: #556B2F;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.historia-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Link ativo no menu */
+.ativo {
+    text-decoration: underline;
+}
+/* ====== Página Serviços ====== */
+
+.servicos-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.servicos-container h2 {
+    text-align: center;
+    color: #556B2F;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.servico-item {
+    background-color: white;
+    border-left: 5px solid #556B2F; /* verde musgo */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.servico-item h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #556B2F;
+}
+
+.servico-item p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* ====== Página Galeria ====== */
+
+.galeria-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.galeria-container h2 {
+    text-align: center;
+    color: #556B2F;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Grade de imagens */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.grid-galeria .foto {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 3px solid #556B2F33; /* verde musgo transparente */
+}
+
+.grid-galeria .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.grid-galeria .foto img:hover {
+    transform: scale(1.05);
+}
+/* ====== Página Contato ====== */
+
+.contato-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contato-container h2 {
+    text-align: center;
+    color: #556B2F;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contato-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Caixa de informações */
+.contato-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    border-left: 5px solid #556B2F;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contato-info h3 {
+    color: #556B2F;
+    margin-bottom: 15px;
+}
+
+.contato-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contato-info a {
+    color: #556B2F;
+    font-weight: bold;
+}
+
+/* Formulário */
+.contato-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #556B2F;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contato-form h3 {
+    color: #556B2F;
+    margin-bottom: 15px;
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #556B2F55;
+    border-radius: 5px;
+}
+
+.contato-form button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #556B2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato-form button:hover {
+    background-color: #445724;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 90px;
+    right: 400px;
+    background-color: #1f7a3f; /* verde musgo */
+    color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+}
